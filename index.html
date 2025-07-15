@@ -1,104 +1,231 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
+    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Movie Library - Home</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+        <link rel="stylesheet" href="css/style2.css">
+
     </head>
 
     <body>
-        <header>
-            <div>
-                <img src="assets/images/logo.svg" alt="MLib Logo Icon" height="32">
-                
+        <header class="navbar has-background-dark">
+            <div class="navbar-brand ">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="#">
+                        <img src="assets/images/logo.svg" alt="MLib Logo Icon">
+                    </a>
+                </div>
             </div>
 
-            <nav>
-                <a href="pages/add-review.html">
-                    <button class="add-button" aria-label="Add new movie review">+</button>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" >
+                    More
                 </a>
-            </nav>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item is-hoverable" href="#">About</a>
+                    <a class="navbar-item is-hoverable" href="#">Contact</a>
+                    <a class="navbar-item is-hoverable" href="#">Help</a>
+                </div>
+            </div>
 
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a href="pages/add-review.html">
+                            <button class="add-button button has-background-dark" aria-label="Add new movie review">+</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </header>
 
-        <main>
-            <div class="movie-list-container">
+        <main class="section">
+            <div class="movie-list-container container">
+                <div class="columns is-multiline is-mobile is-justify-content-center"  >
+                    <div class="column is-one-quarter">
+                        <a href="pages/details-code-of-honor.html" class="link-card">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Code of honor</p>
+                                        <p class="subtitle is-6">@johnsmith</p>
+                                        
+                                    </div>
+                                </div>
+                                    
+                                
+                                <div class="content">
+                                    code of honor é um hilario livro de comedioa feito pelo diretor <a>Marcos Roblox</a>. <a href="#">#muitorir</a>
+                                    <a href="#">#ceara</a>
+                                    <br />
+                                    <time datetime="2016-1-1" class="is-info" >11:09 PM - 1 Jan 1016</time>
+                                </div>
 
-                <div class="movie-card">
-                    <img src="https://placehold.co/200x300" alt="Movie Poster">
-                    <h3>Code of Honor</h3>
-                    <div class="rating">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span class="star-empty">★</span>
+                                <div class="rating is-flex is-justify-content-center">
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span class="star-empty">★</span>
+                                </div>
+                            </div>
+                        </div>
+                        </a>
                     </div>
-                </div>
 
-                <div class="movie-card">
-                    <img src="https://placehold.co/200x300" alt="Movie Poster">
-                    <h3>Debugging Reality</h3>
-                    <div class="rating">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span class="star-empty">★</span>
-                    </div>
-                </div>
+                    <div class="column is-one-quarter">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Code of honor</p>
+                                        <p class="subtitle is-6">@johnsmith</p>
+                                        
+                                    </div>
+                                </div>
+                                    
+                                
+                                <div class="content">
+                                    code of honor é um hilario livro de comedioa feito pelo diretor <a>Marcos Roblox</a>. <a href="#">#muitorir</a>
+                                    <a href="#">#ceara</a>
+                                    <br />
+                                    <time datetime="2016-1-1" class="is-info" >11:09 PM - 1 Jan 1016</time>
+                                </div>
 
-                <div class="movie-card">
-                    <img src="https://placehold.co/200x300" alt="Movie Poster">
-                    <h3>The Neps Protocol</h3>
-                    <div class="rating">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span class="star-empty">★</span>
+                                <div class="rating is-flex is-justify-content-center">
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span class="star-empty">★</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="movie-card">
-                    <img src="https://placehold.co/200x300" alt="Movie Poster">
-                    <h3>Battle of Bits: OBI Chronicles</h3>
-                    <div class="rating">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span class="star-empty">★</span>
-                    </div>
-                </div>
+                    <div class="column is-one-quarter">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Code of honor</p>
+                                        <p class="subtitle is-6">@johnsmith</p>
+                                        
+                                    </div>
+                                </div>
+                                    
+                                
+                                <div class="content">
+                                    code of honor é um hilario livro de comedioa feito pelo diretor <a>Marcos Roblox</a>. <a href="#">#muitorir</a>
+                                    <a href="#">#ceara</a>
+                                    <br />
+                                    <time datetime="2016-1-1" class="is-info" >11:09 PM - 1 Jan 1016</time>
+                                </div>
 
-                <div class="movie-card">
-                    <img src="https://placehold.co/200x300" alt="Movie Poster">
-                    <h3>Algorithm Uprising</h3>
-                    <div class="rating">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span class="star-empty">★</span>
+                                <div class="rating is-flex is-justify-content-center">
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span class="star-empty">★</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="movie-card">
-                    <img src="https://placehold.co/200x300" alt="Movie Poster">
-                    <h3>Runtime Rebellion</h3>
-                    <div class="rating">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span class="star-empty">★</span>
+                    <div class="column is-one-quarter">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Code of honor</p>
+                                        <p class="subtitle is-6">@johnsmith</p>
+                                        
+                                    </div>
+                                </div>
+                                    
+                                
+                                <div class="content">
+                                    code of honor é um hilario livro de comedioa feito pelo diretor <a>Marcos Roblox</a>. <a href="#">#muitorir</a>
+                                    <a href="#">#ceara</a>
+                                    <br />
+                                    <time datetime="2016-1-1" class="is-info" >11:09 PM - 1 Jan 1016</time>
+                                </div>
+
+                                <div class="rating is-flex is-justify-content-center">
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span class="star-empty">★</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="column is-one-quarter">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">Code of honor</p>
+                                        <p class="subtitle is-6">@johnsmith</p>
+                                        
+                                    </div>
+                                </div>
+                                    
+                                
+                                <div class="content">
+                                    code of honor é um hilario livro de comedioa feito pelo diretor <a>Marcos Roblox</a>. <a href="#">#muitorir</a>
+                                    <a href="#">#ceara</a>
+                                    <br />
+                                    <time datetime="2016-1-1" class="is-info" >11:09 PM - 1 Jan 1016</time>
+                                </div>
+
+                                <div class="rating is-flex is-justify-content-center">
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span class="star-empty">★</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
             </div>
-
         </main>
 
         <footer>

@@ -1,82 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Movie Library - Add New Review</title>
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Movie Library - Add New Review</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+</head>
 
-    <body>
-        <header>
-            <a href="../index.html" class="logo-link">
-                <div>
-                <img src="../assets/images/logo.svg" alt="MLib Logo Icon" height="32">
-                
-                </div>
-            </a>
-
-            <nav>
-                <button class="add-button" aria-label="Add new movie review">+</button>
-            </nav>
-        </header>
-
-        <main>
-            
-            <div class="form-page-container">
-
-                <h2>New Review</h2>
-                <div class="form-container">
-                    <form>
-                        <div class="form-group">
-                            <label for="movie-name">Movie Name</label>
-                            <input type="text" id="movie-name" placeholder="Enter the movie title">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="poster-url">Poster URL</label>
-                            <input type="text" id="poster-url" placeholder="Paste image URL (jpg or png)">
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="rating-select">Stars</label>
-                                <select id="rating-select">
-                                    <option value="">Choose a rating</option>
-                                    <option value="1">★☆☆☆☆ - 1 Star</option>
-                                    <option value="2">★★☆☆☆ - 2 Stars</option>
-                                    <option value="3">★★★☆☆ - 3 Stars</option>
-                                    <option value="4">★★★★☆ - 4 Stars</option>
-                                    <option value="5">★★★★★ - 5 Stars</option>
-                                </select>
-                            </div>
-
-
-                            <div class="form-group">
-                                <label for="watched-date">Watched Date</label>
-                                <input type="date" id="watched-date">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="review-text">My Review</label>
-                            <textarea id="review-text" rows="5" placeholder="Write your thoughts here..."></textarea>
-                        </div>
-
-                        <button type="submit" class="submit-button">Add</button>
-
-                    </form>
+<body>
+    <header class="navbar has-background-dark">
+            <div class="navbar-brand ">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="../index.html">
+                        <img src="../assets/images/logo.svg" alt="MLib Logo Icon">
+                    </a>
                 </div>
             </div>
 
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link" >
+                    More
+                </a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item is-hoverable" href="#">About</a>
+                    <a class="navbar-item is-hoverable" href="#">Contact</a>
+                    <a class="navbar-item is-hoverable" href="#">Help</a>
+                </div>
+            </div>
 
-        </main>
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a href="../pages/add-review.html">
+                            <button class="add-button button has-background-dark" aria-label="Add new movie review">+</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-        <footer>
-            <p>&copy; 2025 MLib &ndash; My Movie Library</p>
-        </footer>
-    </body>
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="title is-3">New Review</h2>
+                <div class="box">
+                    <form>
+                        <div class="field">
+                            <label for="movie-name" class="label">Movie Name</label>
+                            <div class="control">
+                                <input type="text" id="movie-name" class="input" placeholder="Enter the movie title">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="poster-url" class="label">Poster URL</label>
+                            <div class="control">
+                                <input type="text" id="poster-url" class="input" placeholder="Paste image URL (jpg or png)">
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <div class="column">
+                                <div class="field">
+                                    <label for="rating-select" class="label">Stars</label>
+                                    <div class="control">
+                                        <div class="select is-fullwidth">
+                                            <select id="rating-select">
+                                                <option value="">Choose a rating</option>
+                                                <option value="1">★☆☆☆☆ - 1 Star</option>
+                                                <option value="2">★★☆☆☆ - 2 Stars</option>
+                                                <option value="3">★★★☆☆ - 3 Stars</option>
+                                                <option value="4">★★★★☆ - 4 Stars</option>
+                                                <option value="5">★★★★★ - 5 Stars</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="field">
+                                    <label for="watched-date" class="label">Watched Date</label>
+                                    <div class="control">
+                                        <input type="date" id="watched-date" class="input">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="review-text" class="label">My Review</label>
+                            <div class="control">
+                                <textarea id="review-text" class="textarea" rows="5" placeholder="Write your thoughts here..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <button type="submit" class="button is-link">Add</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>&copy; 2025 MLib &ndash; My Library</p>
+        </div>
+    </footer>
+</body>
 
 </html>
-

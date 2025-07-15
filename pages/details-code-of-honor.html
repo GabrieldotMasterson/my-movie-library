@@ -1,62 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Movie Library - Code of Honor</title>
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
-
-    <body>
-        <header>
-            <a href="../index.html" class="logo-link">
-                <div>
-                    <img src="../assets/images/mlib-icon.svg" alt="MLib Logo Icon" height="32">
-                    <span>MLib</span>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Movie Library - Code of Honor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/style2.css">
+</head>
+<body>
+    <header class="navbar has-background-dark">
+            <div class="navbar-brand ">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="../index.html">
+                        <img src="../assets/images/logo.svg" alt="MLib Logo Icon">
+                    </a>
                 </div>
-            </a>
+            </div>
 
-            <nav>
-                <a href="add-review.html">
-                    <button class="add-button" aria-label="Add new movie review">+</button>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    More
                 </a>
-            </nav>
-        </header>
-
-        <main>
-            <div class="movie-details-container">
-
-                <div class="movie-poster">
-                    <img src="https://placehold.co/380x570" alt="Poster for Code of Honor">
+                <div class="navbar-dropdown">
+                    <a class="navbar-item is-hoverable" href="#">About</a>
+                    <a class="navbar-item is-hoverable" href="#">Contact</a>
+                    <a class="navbar-item is-hoverable" href="#">Help</a>
                 </div>
 
-                <div class="movie-details-info">
-                    <h1 class="movie-title">Code of Honor</h1>
+            </div>
 
-                    <div class="movie-section">
-                        <p><strong>Watched on:</strong> 06/10/2025</p>
-                    </div>
+            <div class="navbar-menu">
+                <div class="navbar-end">
 
-                    <div class="movie-section rating-details">
-                        <p><strong>Rating:</strong></p>
-                        <div class="rating">
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span class="star-empty">★</span>
-                        </div>
-                    </div>
-
-                    <div class="movie-section">
-                        <p class="review-title"><strong>Review:</strong></p>
-                        <p>An exemplary tale of programming virtue and determination. The plot twists were as unexpected as a segmentation fault. A must-watch for every developer.</p>
+                    <div class="navbar-item">
+                        <a href="../pages/add-review.html">
+                            <button class="add-button button has-background-dark" aria-label="Add new movie review">+</button>
+                        </a>
                     </div>
                 </div>
             </div>
-        </main>
+        </header>
 
+    <main class="section container-detail">
+        <div class="container  ">
+            <div class="columns is-centered ">
+                <div class="column is-one-third">
+                    <div class="card ">
+                        <figure class="image is-4by3">
+                                    <img src="../assets\images\gallery1.jpg" class="img-detail" alt="Placeholder image" />
+                        </figure>
+                        <div class="card-content is-flex">
+                            <div>
+                                <h1 class="title is-4 mb-2">Code of Honor</h1>
+                                <p class="mb-1"><strong>read on:</strong> 06/10/2025</p>
+                                <p class="mb-1"><strong>Rating:</strong> ★★★★☆</p>
+                                <p class="mb-1"><strong>Review:</strong></p>
+                                <p>Livro envolvente, ótimos personagens e diálogos. Recomendo para fãs de ação e aventura.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <footer>
-            <p>&copy; 2025 MLib &ndash; My Movie Library</p>
-        </footer>
-    </body>
+        
+    </main>
 
+    <section class="section">
+        <div class="soprausaroflexbox">
+                <img src="../assets/images/gallery1.jpg" class="soprausaroflexbox-img" alt="">    
+                <img src="../assets/images/gallery1.jpg" class="soprausaroflexbox-img" alt="">   
+                <img src="../assets/images/gallery1.jpg" class="soprausaroflexbox-img" alt="">   
+                <img src="../assets/images/gallery1.jpg" class="soprausaroflexbox-img" alt="">   
+        </div>
+    </section>
+
+    <footer class="footer has-background-dark has-text-white-ter ">
+        <div class="content has-text-centered">
+            <p>&copy; 2025 MLib &ndash; My Library</p>
+        </div>
+    </footer>
+</body>
 </html>
